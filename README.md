@@ -1,6 +1,5 @@
 # LocalizedPlural
 
-[![CI Status](https://img.shields.io/travis/Mikhail Akopov/LocalizedPlural.svg?style=flat)](https://travis-ci.org/Mikhail Akopov/LocalizedPlural)
 [![Version](https://img.shields.io/cocoapods/v/LocalizedPlural.svg?style=flat)](https://cocoapods.org/pods/LocalizedPlural)
 [![License](https://img.shields.io/cocoapods/l/LocalizedPlural.svg?style=flat)](https://cocoapods.org/pods/LocalizedPlural)
 [![Platform](https://img.shields.io/cocoapods/p/LocalizedPlural.svg?style=flat)](https://cocoapods.org/pods/LocalizedPlural)
