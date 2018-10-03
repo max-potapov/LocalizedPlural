@@ -22,7 +22,7 @@ pod 'LocalizedPlural'
 
 ## Author
 
-Mikhail Akopov, mikhail.akopov@admiralmarkets.com
+Mikhail Akopov, mikhail.akopov.ios@gmail.com
 
 ## License
 

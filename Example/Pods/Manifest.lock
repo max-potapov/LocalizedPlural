@@ -1,0 +1,16 @@
+PODS:
+  - LocalizedPlural (0.1.0)
+
+DEPENDENCIES:
+  - LocalizedPlural (from `../`)
+
+EXTERNAL SOURCES:
+  LocalizedPlural:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LocalizedPlural: cf9e6fb65bb57819aab522bc8d6ba69160923032
+
+PODFILE CHECKSUM: 627e07ab4ddf6d3c616f32c52cf19e5a05565bd9
+
+COCOAPODS: 1.5.3

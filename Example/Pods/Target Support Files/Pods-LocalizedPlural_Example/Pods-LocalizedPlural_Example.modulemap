@@ -1,0 +1,6 @@
+framework module Pods_LocalizedPlural_Example {
+  umbrella header "Pods-LocalizedPlural_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

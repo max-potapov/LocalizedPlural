@@ -1,0 +1,22 @@
+{
+  "name": "LocalizedPlural",
+  "version": "0.1.0",
+  "summary": "A short description of LocalizedPlural.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/wacumov/LocalizedPlural",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Mikhail Akopov": "mikhail.akopov.ios@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/wacumov/LocalizedPlural.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LocalizedPlural/Sources/**/*"
+}
