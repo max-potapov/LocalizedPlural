@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LocalizedPlural_Example' do
+  pod 'LocalizedPlural', :path => '../'
+
+  target 'LocalizedPlural_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
