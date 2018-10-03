@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author           = { 'Mikhail Akopov' => 'mikhail.akopov.ios@gmail.com' }
   s.source           = { :git => 'https://github.com/wacumov/LocalizedPlural.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
-
+  s.ios.deployment_target = '9.3'
+  s.swift_version = '4.2'
   s.source_files = 'LocalizedPlural/Sources/**/*'
 end
