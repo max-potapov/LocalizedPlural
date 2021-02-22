@@ -1,10 +1,12 @@
 //
 //  PluralRule.swift
-//  Pods
+//  LocalizedPlural
 //
 //  Created by Mikhail Akopov on 10/3/18.
 //  Copyright © 2018 Mikhail Akopov. All rights reserved.
 //
+
+import Foundation
 
 enum PluralRule: String {
     case zero
@@ -13,7 +15,7 @@ enum PluralRule: String {
     case few
     case many
     case other
-    
+
     init(language: SupportedLanguage, count: Int) {
         switch language {
         case .arabic:
@@ -92,7 +94,7 @@ enum PluralRule: String {
             self = .makeVietnamese(count: count)
         }
     }
-    
+
     private static func makeArabic(count: Int) -> PluralRule {
         switch count {
         case 0:
@@ -112,23 +114,23 @@ enum PluralRule: String {
             }
         }
     }
-    
+
     private static func makeBulgarian(count: Int) -> PluralRule {
         return makeDefault(count: count)
     }
-    
+
     private static func makeSimplifiedChinese(count: Int) -> PluralRule {
         return .other
     }
-    
+
     private static func makeTraditionalChinese(count: Int) -> PluralRule {
         return .other
     }
-    
+
     private static func makeCatalan(count: Int) -> PluralRule {
         return makeDefault(count: count)
     }
-    
+
     private static func makeCroatian(count: Int) -> PluralRule {
         switch count.mod10 {
         case 1:
@@ -144,7 +146,7 @@ enum PluralRule: String {
             return .many
         }
     }
-    
+
     private static func makeCzech(count: Int) -> PluralRule {
         switch count {
         case 1:
@@ -155,11 +157,11 @@ enum PluralRule: String {
             return .other
         }
     }
-    
+
     private static func makeEnglish(count: Int) -> PluralRule {
         return makeDefault(count: count)
     }
-    
+
     private static func makeFrench(count: Int) -> PluralRule {
         switch count {
         case 0 ... 1:
@@ -168,27 +170,27 @@ enum PluralRule: String {
             return .other
         }
     }
-    
+
     private static func makeGerman(count: Int) -> PluralRule {
         return makeDefault(count: count)
     }
-    
+
     private static func makeDanish(count: Int) -> PluralRule {
         return makeDefault(count: count)
     }
-    
+
     private static func makeDutch(count: Int) -> PluralRule {
         return makeDefault(count: count)
     }
-    
+
     private static func makeFinnish(count: Int) -> PluralRule {
         return makeDefault(count: count)
     }
-    
+
     private static func makeGreek(count: Int) -> PluralRule {
         return makeDefault(count: count)
     }
-    
+
     private static func makeHebrew(count: Int) -> PluralRule {
         switch count {
         case 1:
@@ -201,27 +203,27 @@ enum PluralRule: String {
             return count.mod10 == 0 ? .many : .other
         }
     }
-    
+
     private static func makeHungarian(count: Int) -> PluralRule {
         return makeDefault(count: count)
     }
-    
+
     private static func makeIndonesian(count: Int) -> PluralRule {
         return .other
     }
-    
+
     private static func makeItalian(count: Int) -> PluralRule {
         return makeDefault(count: count)
     }
-    
+
     private static func makeJapanese(count: Int) -> PluralRule {
         return .other
     }
-    
+
     private static func makeKorean(count: Int) -> PluralRule {
         return .other
     }
-    
+
     private static func makeLatvian(count: Int) -> PluralRule {
         switch count {
         case 0:
@@ -237,19 +239,19 @@ enum PluralRule: String {
             return .many
         }
     }
-    
+
     private static func makeMalay(count: Int) -> PluralRule {
         return .other
     }
-    
+
     private static func makeNorwegianBokmal(count: Int) -> PluralRule {
         return makeDefault(count: count)
     }
-    
+
     private static func makeNorwegianNynorsk(count: Int) -> PluralRule {
         return makeDefault(count: count)
     }
-    
+
     private static func makePolish(count: Int) -> PluralRule {
         if count == 1 {
             return .one
@@ -266,11 +268,11 @@ enum PluralRule: String {
             return .many
         }
     }
-    
+
     private static func makePortuguese(count: Int) -> PluralRule {
         return makeDefault(count: count)
     }
-    
+
     private static func makeRomanian(count: Int) -> PluralRule {
         switch count {
         case 0:
@@ -286,7 +288,7 @@ enum PluralRule: String {
             }
         }
     }
-    
+
     private static func makeRussian(count: Int) -> PluralRule {
         switch count.mod100 {
         case 11 ... 14:
@@ -302,7 +304,7 @@ enum PluralRule: String {
             }
         }
     }
-    
+
     private static func makeSerbian(count: Int) -> PluralRule {
         switch count {
         case 1:
@@ -313,7 +315,7 @@ enum PluralRule: String {
             return .other
         }
     }
-    
+
     private static func makeSlovak(count: Int) -> PluralRule {
         switch count {
         case 1:
@@ -324,7 +326,7 @@ enum PluralRule: String {
             return .other
         }
     }
-    
+
     private static func makeSlovenian(count: Int) -> PluralRule {
         switch count.mod100 {
         case 1:
@@ -337,23 +339,23 @@ enum PluralRule: String {
             return .other
         }
     }
-    
+
     private static func makeSpanish(count: Int) -> PluralRule {
         return makeDefault(count: count)
     }
-    
+
     private static func makeSwedish(count: Int) -> PluralRule {
         return makeDefault(count: count)
     }
-    
+
     private static func makeThai(count: Int) -> PluralRule {
         return .other
     }
-    
+
     private static func makeTurkish(count: Int) -> PluralRule {
         return .other
     }
-    
+
     private static func makeUkrainian(count: Int) -> PluralRule {
         switch count.mod100 {
         case 11 ... 14:
@@ -367,14 +369,14 @@ enum PluralRule: String {
             default:
                 return .many
             }
-            
+
         }
     }
-    
+
     private static func makeVietnamese(count: Int) -> PluralRule {
         return .other
     }
-    
+
     private static func makeDefault(count: Int) -> PluralRule {
         switch count {
         case 1:
@@ -386,13 +388,11 @@ enum PluralRule: String {
 }
 
 private extension Int {
-    
     var mod10: Int {
         return self % 10
     }
-    
+
     var mod100: Int {
         return self % 100
     }
-    
 }

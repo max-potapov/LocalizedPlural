@@ -1,10 +1,12 @@
 //
 //  SupportedLanguage.swift
-//  Pods
+//  LocalizedPlural
 //
 //  Created by Mikhail Akopov on 10/3/18.
 //  Copyright © 2018 Mikhail Akopov. All rights reserved.
 //
+
+import Foundation
 
 enum SupportedLanguage: String, CaseIterable {
     case arabic = "ar"
@@ -44,7 +46,7 @@ enum SupportedLanguage: String, CaseIterable {
     case turkish = "tr"
     case ukrainian = "uk"
     case vietnamese = "vi"
-    
+
     init?(languageCode: String) {
         for language in SupportedLanguage.allCases {
             if languageCode.hasPrefix(language.rawValue) {
@@ -54,6 +56,6 @@ enum SupportedLanguage: String, CaseIterable {
         }
         return nil
     }
-    
+
     static var defaultLanguage: SupportedLanguage = .english
 }

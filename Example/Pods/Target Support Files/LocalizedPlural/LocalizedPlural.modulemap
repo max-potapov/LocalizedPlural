@@ -1,6 +1,0 @@
-framework module LocalizedPlural {
-  umbrella header "LocalizedPlural-umbrella.h"
-
-  export *
-  module * { export * }
-}
